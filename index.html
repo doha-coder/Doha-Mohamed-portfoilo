@@ -196,7 +196,7 @@
         }
         
         .hero-image img {
-            max-width: 60%;
+            max-width: 50%;
             border-radius: 50%;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             border: 5px solid white;
@@ -828,108 +828,7 @@
             </div>
         </div>
     </section>
-<!-- services_section.html - Responsive Services section for portfolio -->
-<section id="services" aria-labelledby="services-heading" style="font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;">
-  <style>
-    :root{--accent:#0f62fe;--muted:#6b7280;--card-bg:#ffffff;--glass:rgba(15,98,254,0.06)}
-    .services-wrap{max-width:1100px;margin:48px auto;padding:32px}
-    .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-    @media (max-width:900px){.services-grid{grid-template-columns:repeat(2,1fr)}}
-    @media (max-width:600px){.services-grid{grid-template-columns:1fr}}
-    .card{background:linear-gradient(180deg,var(--card-bg),#fbfdff);border-radius:14px;padding:24px;box-shadow:0 8px 24px rgba(16,24,40,0.06);border:1px solid rgba(15,23,42,0.04);display:flex;flex-direction:column;gap:12px;min-height:220px}
-    .kicker{display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;background:var(--glass);font-weight:600;color:var(--accent);font-size:13px}
-    h3{margin:0;font-size:20px}
-    p.desc{margin:0;color:var(--muted);line-height:1.5}
-    .card-footer{margin-top:auto;display:flex;justify-content:space-between;align-items:center}
-    .btn{background:var(--accent);color:#fff;border:none;padding:10px 14px;border-radius:10px;font-weight:600;cursor:pointer;text-decoration:none}
-    .meta{font-size:13px;color:var(--muted)}
-    /* subtle icon styling */
-    .icon-wrap{width:52px;height:52px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(180deg,rgba(15,98,254,0.12),rgba(15,98,254,0.04))}
-  </style>
 
-  <div class="services-wrap">
-    <header style="display:flex;flex-direction:column;gap:8px;margin-bottom:18px">
-      <p style="color:var(--accent);font-weight:700;margin:0">Services for Large Enterprises</p>
-      <h2 id="services-heading" style="font-size:28px;margin:0;">High-assurance GRC & Cybersecurity Services</h2>
-      <p style="color:var(--muted);max-width:780px;margin-top:8px;">I deliver enterprise-grade governance, compliance and risk solutions that protect reputation, ensure regulatory adherence, and enable secure growth at scale.</p>
-    </header>
-
-    <div class="services-grid" role="list">
-
-      <!-- Service 1 -->
-      <article class="card" role="listitem" aria-labelledby="svc1-title">
-        <div style="display:flex;gap:14px;align-items:center">
-          <div class="icon-wrap" aria-hidden="true">
-            <!-- Shield SVG -->
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M12 2L4 5v6c0 5 4 9 8 11 4-2 8-6 8-11V5l-8-3z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
-              <path d="M9.5 11.5l2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </div>
-          <div style="flex:1">
-            <div class="kicker">Governance &amp; Compliance Frameworks</div>
-            <h3 id="svc1-title">Enterprise GRC &amp; ISO/NIST Alignment</h3>
-          </div>
-        </div>
-
-        <p class="desc">Design and implement tailored governance structures and compliance roadmaps aligned with ISO 27001, NIST CSF, GDPR and other global standards—ensuring policy consistency across large, distributed enterprises.</p>
-
-        <div class="card-footer">
-          <span class="meta">Includes gap analysis, roadmap & policy templates</span>
-          <a class="btn" href="#contact">Engage</a>
-        </div>
-      </article>
-
-      <!-- Service 2 -->
-      <article class="card" role="listitem" aria-labelledby="svc2-title">
-        <div style="display:flex;gap:14px;align-items:center">
-          <div class="icon-wrap" aria-hidden="true">
-            <!-- Risk SVG -->
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M12 2v10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
-              <path d="M4 12c1.6 4 5 7 8 8 3-1 6.4-4 8-8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </div>
-          <div style="flex:1">
-            <div class="kicker">Risk Assessment &amp; Policy</div>
-            <h3 id="svc2-title">Enterprise Risk Assessment &amp; Policy Development</h3>
-          </div>
-        </div>
-
-        <p class="desc">Comprehensive enterprise risk assessments, control-mapping, and policy development that convert technical findings into board-level decisions—reducing exposure and prioritizing remediation for maximum business impact.</p>
-
-        <div class="card-footer">
-          <span class="meta">Includes risk register, heatmaps & remediation priorities</span>
-          <a class="btn" href="#contact">Request Audit</a>
-        </div>
-      </article>
-
-      <!-- Service 3 -->
-      <article class="card" role="listitem" aria-labelledby="svc3-title">
-        <div style="display:flex;gap:14px;align-items:center">
-          <div class="icon-wrap" aria-hidden="true">
-            <!-- Strategy SVG -->
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M3 12h6l2-8 2 16 2-8h6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </div>
-          <div style="flex:1">
-            <div class="kicker">Security &amp; Compliance Strategy</div>
-            <h3 id="svc3-title">Executive Security &amp; Compliance Advisory</h3>
-          </div>
-        </div>
-
-        <p class="desc">Advisory services for leadership teams—aligning cybersecurity and compliance with business strategy, vendor risk, and digital transformation initiatives to ensure secure, compliant growth at enterprise scale.</p>
-
-        <div class="card-footer">
-          <span class="meta">Includes board briefings, vendor assessments & transformation plans</span>
-          <a class="btn" href="#contact">Schedule Call</a>
-        </div>
-      </article>
-
-    </div>
-  </div>
-</section>
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
@@ -991,5 +890,3 @@
 </body>
 
 </html>
-
-
